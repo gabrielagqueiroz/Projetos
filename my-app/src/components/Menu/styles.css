@@ -1,0 +1,13 @@
+.btn-buscar {
+background-color: #FF851B !important;
+color: #fff !important;
+}
+
+.btn-cadastrar {
+    background-color:#003872 !important;
+    color: #fff !important;
+}
+
+input {
+    border-color: #FF851B !important;
+}

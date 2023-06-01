@@ -1,0 +1,17 @@
+import './styles.css'
+
+export default function Menu() {
+    return(
+        <div className="row g-3 align-items-center">
+        <div className="col">
+        <input className="form-control mt-4 form-control-sm" placeholder='Buscar'/>
+        </div>
+        <div className="col text-start">
+        <button className="btn btn-sm mt-4 btn-buscar">BUSCAR</button>
+        </div>
+        <div className="col text-end">
+        <button className="btn btn-sm mt-4 btn-cadastrar">CADASTRAR</button>
+        </div>
+        </div>  
+    )
+}

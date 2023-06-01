@@ -1,0 +1,18 @@
+.Nav {
+    text-align: end;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #FF851B;
+}
+
+.Nav:hover{
+    cursor: pointer;
+    color: #003872;
+}
+
+
+nav {
+    margin-top: 1.5rem;
+}

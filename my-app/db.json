@@ -1,0 +1,39 @@
+{
+    "produtos": [
+        {
+           "nome": "ARROZ",
+           "preco": 5,
+           "quantidade": 10,
+           "peso": 1
+
+        },
+        {
+            "nome": "ARROZ",
+            "preco": 5,
+            "quantidade": 10,
+            "peso": 1
+ 
+         },
+         {
+            "nome": "ARROZ",
+            "preco": 5,
+            "quantidade": 10,
+            "peso": 1
+ 
+         },
+         {
+            "nome": "ARROZ",
+            "preco": 5,
+            "quantidade": 10,
+            "peso": 1
+ 
+         },
+         {
+            "nome": "ARROZ",
+            "preco": 5,
+            "quantidade": 10,
+            "peso": 1
+ 
+         }
+    ]
+}
