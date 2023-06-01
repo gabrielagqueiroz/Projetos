@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
  
 export default function Produtos() {
 
- /*    const [usuario, setUsuario] = useState([]);
+ /*const [usuario, setUsuario] = useState([]);
 
 
     // Porque precisa colocar dentro dessa constante lista ?
