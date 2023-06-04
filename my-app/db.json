@@ -4,35 +4,44 @@
            "nome": "ARROZ",
            "preco": 5,
            "quantidade": 10,
-           "peso": 1
+           "peso": 1,
+           "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
 
         },
         {
             "nome": "ARROZ",
             "preco": 5,
             "quantidade": 10,
-            "peso": 1
+            "peso": 1,
+            "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+ 
  
          },
          {
             "nome": "ARROZ",
             "preco": 5,
             "quantidade": 10,
-            "peso": 1
+            "peso": 1,
+            "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+ 
  
          },
          {
             "nome": "ARROZ",
             "preco": 5,
             "quantidade": 10,
-            "peso": 1
+            "peso": 1,
+            "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+ 
  
          },
          {
             "nome": "ARROZ",
             "preco": 5,
             "quantidade": 10,
-            "peso": 1
+            "peso": 1,
+            "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+ 
  
          }
     ]

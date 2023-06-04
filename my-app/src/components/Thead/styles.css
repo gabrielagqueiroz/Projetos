@@ -1,4 +1,6 @@
 th {
+ align-items: center !important;
+ text-align: center !important;
  background-color: #001226 !important;
  color: #ffff !important;
 }

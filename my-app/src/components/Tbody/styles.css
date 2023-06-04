@@ -1,0 +1,11 @@
+button {
+    margin-right: 0.5rem;
+    background-color: #003f3f !important;
+    color: #fff !important;
+    align-items: center !important;
+}
+
+td {
+    align-items: center !important;
+    text-align: center;
+}
