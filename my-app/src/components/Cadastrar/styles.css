@@ -1,0 +1,22 @@
+.btn-cadastrar {
+        
+        background-color:#FF851B !important;
+        color: #fff !important;
+    }
+
+.btn-close{
+    color: #fff !important;
+}
+    
+input {
+        border-color: #FF851B !important; 
+    }
+    
+h4, label {
+        color: #FF851B;
+        font-weight: bold;
+    }
+    
+.offcanvas-header, .offcanvas-body, .text-center {
+        background-color: #001f3f !important;
+    }

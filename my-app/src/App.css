@@ -1,4 +1,8 @@
+div {
+  background-color: #ffffff !important;
+}
+
 h1 {
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   color: #001f3f;
 }

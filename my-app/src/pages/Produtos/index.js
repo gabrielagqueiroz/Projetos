@@ -2,7 +2,9 @@ import Thead from '../../components/Thead'
 import Tbody from '../../components/Tbody'
 import Menu from '../../components/Menu'
 
+
 import 'bootstrap/dist/css/bootstrap.css';
+
 
         
 export default function Produtos() {

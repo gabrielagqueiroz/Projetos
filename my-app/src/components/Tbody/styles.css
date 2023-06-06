@@ -1,11 +1,18 @@
-button {
+.btn-editar {
     margin-right: 0.5rem;
-    background-color: #003f3f !important;
+    background-color: #FF851B !important;
+    color: #fff !important;
+    align-items: center !important;
+}
+
+.btn-excluir {
+    margin-right: 0.5rem;
+    background-color: #003872 !important;
     color: #fff !important;
     align-items: center !important;
 }
 
 td {
-    align-items: center !important;
-    text-align: center;
+    text-align: center !important;
+    vertical-align: center !important ;
 }

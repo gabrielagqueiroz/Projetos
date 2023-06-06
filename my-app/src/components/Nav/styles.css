@@ -4,12 +4,12 @@
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: #FF851B;
+    color: #ffff;
 }
 
 .Nav:hover{
     cursor: pointer;
-    color: #003872;
+    color: #003f3f;
 }
 
 

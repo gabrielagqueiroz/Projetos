@@ -7,20 +7,20 @@ import './App.css'
 function App() {
   return (
     <BrowserRouter>
-    <div className="container">
-      
-      <h1>Menu Profit</h1>
-      
-      <Nav/>
+      <div className="container">
+        
+        <h1>Menu Profit</h1>
+        
+        <Nav/>
 
-      <hr />
+        <hr />
 
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="/produtos" element={<Produtos/>} />
-       
-      </Routes>
-    </div>
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/produtos" element={<Produtos/>} />
+        </Routes>
+        
+      </div>
     </BrowserRouter>
   );
 }
