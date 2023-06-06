@@ -6,8 +6,8 @@ export default function Thead() {
                 <tr>
                     <th>NOME</th>
                     <th>QUANTIDADE</th>
-                    <th>PESO</th>
                     <th>PRECO</th>
+                    <th>PESO</th>
                     <th>FOTO</th>
                     <th>AÇÕES</th>
                 </tr>

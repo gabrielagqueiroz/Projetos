@@ -14,7 +14,7 @@ input {
     
 h4, label {
         color: #FF851B;
-        font-weight: bold;
+        font-weight: 600 !important;
     }
     
 .offcanvas-header, .offcanvas-body, .text-center {

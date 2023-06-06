@@ -30,8 +30,8 @@ export default function Tbody() {
                     <tr key={cada.id}>
                         <td>{cada.nome}</td>
                         <td>{cada.quantidade}</td>
-                        <td>{cada.peso * cada.quantidade}kg</td>
                         <td>${cada.preco * cada.quantidade},00</td>
+                        <td>{cada.peso * cada.quantidade}kg</td>
                         <td>
                             <img src={cada.foto} alt="" width="70rem" />
                         </td>

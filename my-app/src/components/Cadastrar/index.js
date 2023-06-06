@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,9 +9,10 @@ export default function Cadastrar() {
     const [novoProduto, setNovoProduto] = useState({
         id: '',
         nome: '',
-        qtd: '',
+        quantidade: '',
         preco: '',
-        peso:''
+        peso:'',
+        foto: ''
     });
 
 
@@ -26,8 +27,8 @@ export default function Cadastrar() {
             });
             const dados = await resposta.json();
             console.log(dados)
-            setNovoProduto(dados);
-            setProduto(false);
+            setProduto([...produto, dados])
+            setNovoProduto({id: '', nome: '', quantidade: '', preco: '', peso:'', foto: ''});
         } catch (error) {
             console.log(error);
         }
@@ -63,16 +64,39 @@ export default function Cadastrar() {
                 <div className="offcanvas-body">
                     <form>
                         <label htmlFor="nome">NOME</label>
-                        <input type="text" className="form-control mb-4"/>
+                        <input 
+                        type="text" 
+                        className="form-control mb-4" 
+                        value={novoProduto.nome} 
+                        onChange={e => setNovoProduto({...novoProduto, nome: e.target.value})}/>
 
-                        <label htmlFor="qtd">QUANTIDADE</label>
-                        <input type="text" className="form-control mb-3"/>
+                        <label htmlFor="quantidade">QUANTIDADE</label>
+                        <input 
+                        type="text" 
+                        className="form-control mb-3"
+                        value={novoProduto.quantidade} 
+                        onChange={e => setNovoProduto({...novoProduto, quantidade: e.target.value})}/>
 
                         <label htmlFor="preco">PREÇO</label>
-                        <input type="text" className="form-control mb-3"/>
+                        <input 
+                        type="text" 
+                        className="form-control mb-3"
+                        value={novoProduto.preco} 
+                        onChange={e => setNovoProduto({...novoProduto, preco: e.target.value})}/>
 
                         <label htmlFor="peso">PESO</label>
-                        <input type="text" className="form-control mb-3"/>
+                        <input 
+                        type="text" 
+                        className="form-control mb-3"
+                        value={novoProduto.peso} 
+                        onChange={e => setNovoProduto({...novoProduto, peso: e.target.value})}/> 
+
+                        <label htmlFor="foto">FOTO</label>
+                        <input 
+                        type="image" alt="" 
+                        className="form-control mb-3"
+                        value={novoProduto.foto} 
+                        onChange={e => setNovoProduto({...novoProduto, foto: e.target.value})}/> 
 
                         <div className="text-center">
                         <button className="btn btn-sm mt-4 btn-cadastrar" onClick={cadastro}>CADASTRAR</button>
