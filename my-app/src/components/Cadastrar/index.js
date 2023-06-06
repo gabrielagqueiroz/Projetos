@@ -87,18 +87,20 @@ export default function Cadastrar() {
                         <label htmlFor="peso">PESO</label>
                         <input 
                         type="text" 
-                        className="form-control mb-3"
+                        className="form-control mb-4"
                         value={novoProduto.peso} 
                         onChange={e => setNovoProduto({...novoProduto, peso: e.target.value})}/> 
 
-                        <label htmlFor="foto">FOTO</label>
+                        <label className="foto">
+                        <img className="img" src="" alt=""/>
                         <input 
-                        type="image" alt="" 
-                        className="form-control mb-3"
+                        type="file" alt="" accept="image/*"
+                        className="inputFoto"
                         value={novoProduto.foto} 
                         onChange={e => setNovoProduto({...novoProduto, foto: e.target.value})}/> 
-
-                        <div className="text-center">
+                        </label>
+                       
+                        <div className="text-center"> 
                         <button className="btn btn-sm mt-4 btn-cadastrar" onClick={cadastro}>CADASTRAR</button>
                         </div>
                         
