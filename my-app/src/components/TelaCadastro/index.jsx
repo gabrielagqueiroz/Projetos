@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Cadastrar from '../../components/Cadastrar';
+import Cadastrar from '../Cadastrar';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.css';

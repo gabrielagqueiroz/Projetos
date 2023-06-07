@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import ButtonExcluir from '../../components/ButtonExcluir';
+import ButtonExcluir from '../ButtonExcluir';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.css';
-import './styles.css';
+
 
 export default function Cadastrar(props) {
     const [novoProduto, setNovoProduto] = useState({
@@ -25,7 +25,6 @@ export default function Cadastrar(props) {
                 body: JSON.stringify(novoProduto)
             });
             const dados = await resposta.json();
-            console.log(dados)
             props.setProduto([...props.produto, dados])
             setNovoProduto({id: '', nome: '', quantidade: '', preco: '', peso:'', foto: ''});
         } catch (error) {
@@ -33,8 +32,18 @@ export default function Cadastrar(props) {
         }
     }
 
+    const mudarFoto = (e) => {
+        const img = e.target.files[0]; // e = img, target= input, files[0]= array de arquivos selecionados caso mais de 1 
+        const lerFoto = new FileReader();
 
-  
+        lerFoto.onload = () => {
+            setNovoProduto({...novoProduto, foto: lerFoto.result}); {/*entender trecho*/}
+        }
+
+        if(img){
+            lerFoto.readAsDataURL(img)
+        }
+    }
 
 
   return (
@@ -76,16 +85,20 @@ export default function Cadastrar(props) {
                         type="text" 
                         className="form-control mb-4"
                         value={novoProduto.peso} 
-                        onChange={e => setNovoProduto({...novoProduto, peso: e.target.value})}/> 
+                        onChange={e => setNovoProduto({...novoProduto, peso: e.target.value})}/> {/*entender trecho*/}
 
-                        <label className="foto">
-                        <img className="img" src="" alt=""/>
-                        <input 
-                        type="file" alt="" accept="image/*"
-                        className="inputFoto"
-                        value={novoProduto.foto} 
-                        onChange={e => setNovoProduto({...novoProduto, foto: e.target.value})}/> 
-                        </label>
+                        <div className="text-center">
+                            <div className="d-flex align-items-center justify-content-center mb-4">
+                                <label htmlFor="foto" className="foto">
+                                {novoProduto.foto && <img className="img" src={novoProduto.foto} alt=""/>} {/*entender trecho*/}
+                                <input 
+                                type="file" id="foto" alt="" accept="image/*"
+                                className="inputFoto"
+                                onChange={mudarFoto}/> 
+                                </label>
+                       
+                            </div>
+                        </div>
                        
                         <div className="text-center"> 
                         <button className="btn btn-sm mt-4 btn-cadastrar" onClick={cadastro}>CADASTRAR</button>

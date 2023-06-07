@@ -1,4 +1,4 @@
-import TelaCadastro from '../../components/TelaCadastro'
+import TelaCadastro from '../TelaCadastro'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
