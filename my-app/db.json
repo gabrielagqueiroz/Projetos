@@ -2,47 +2,23 @@
   "produtos": [
     {
       "id": 1,
-      "nome": "ARROZ",
+      "nome": "arroz",
       "quantidade": 10,
       "preco": 5,
       "peso": 1,
-      "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+      "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
     },
     {
       "id": 2,
-      "nome": "ARROZ",
+      "nome": "arroz",
       "quantidade": 10,
       "preco": 5,
       "peso": 1,
-      "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
+      "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
     },
     {
       "id": 3,
-      "nome": "ARROZ",
-      "quantidade": 10,
-      "preco": 5,
-      "peso": 1,
-      "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
-    },
-    {
-      "id": 4,
-      "nome": "ARROZ",
-      "quantidade": 10,
-      "preco": 5,
-      "peso": 1,
-      "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
-    },
-    {
-      "id": 5,
-      "nome": "ARROZ",
-      "quantidade": 10,
-      "preco": 5,
-      "peso": 1,
-      "foto": "https://www.ndays.com.br/image/cache/catalog/gpa/7896079431158-500x500.png"
-    },
-    {
-      "id": 6,
-      "nome": "Leite",
+      "nome": "leite",
       "quantidade": "10",
       "preco": "5",
       "peso": "1",

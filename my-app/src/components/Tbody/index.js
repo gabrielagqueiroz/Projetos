@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-
+import ButtonExcluir from '../../components/ButtonExcluir';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
@@ -22,6 +22,7 @@ export default function Tbody() {
         buscarProdutos(); // aqui ele chama a função de efeito, como os valores atualizados
     }, []);
 
+ 
 
     return (
         <tbody>
@@ -37,7 +38,7 @@ export default function Tbody() {
                         </td>
                         <td>
                             <button className="btn btn-sm mt-4 btn-editar">Editar</button>
-                            <button className="btn btn-sm mt-4 btn-excluir">Excluir</button>
+                           <ButtonExcluir id={cada.id} setProduto={setProduto}/>
                         </td>
                     </tr>
                 )
@@ -45,3 +46,42 @@ export default function Tbody() {
         </tbody>
     )
 }
+
+
+
+/* {
+    "produtos": [
+      {
+        "id": 1,
+        "nome": "arroz",
+        "quantidade": 10,
+        "preco": 5,
+        "peso": 1,
+        "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
+      },
+      {
+        "id": 2,
+        "nome": "arroz",
+        "quantidade": 10,
+        "preco": 5,
+        "peso": 1,
+        "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "arroz",
+        "quantidade": 10,
+        "preco": 5,
+        "peso": 1,
+        "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
+      },
+      {
+        "id": 4,
+        "nome": "arroz",
+        "quantidade": 10,
+        "preco": 5,
+        "peso": 1,
+        "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
+      }
+    ]
+  } */

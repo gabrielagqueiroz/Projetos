@@ -1,4 +1,4 @@
-import Cadastrar from '../../components/Cadastrar'
+import TelaCadastro from '../../components/TelaCadastro'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
@@ -13,7 +13,7 @@ export default function Menu() {
         <div className="col text-start">
             <button className="btn btn-sm mt-4 btn-buscar">BUSCAR</button>
         </div>
-        <Cadastrar/>
+        <TelaCadastro/>
     </div>
     ); 
 }

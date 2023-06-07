@@ -4,8 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 
-export default function Cadastrar() {
-    const [produto, setProduto] = useState(false);
+export default function Cadastrar(props) {
     const [novoProduto, setNovoProduto] = useState({
         id: '',
         nome: '',
@@ -27,7 +26,7 @@ export default function Cadastrar() {
             });
             const dados = await resposta.json();
             console.log(dados)
-            setProduto([...produto, dados])
+            props.setProduto([...props.produto, dados])
             setNovoProduto({id: '', nome: '', quantidade: '', preco: '', peso:'', foto: ''});
         } catch (error) {
             console.log(error);
@@ -35,24 +34,12 @@ export default function Cadastrar() {
     }
 
 
-  const telaCadastro = () => {
-    setProduto(true);
-  };
+  
+
 
   return (
-    <>
-        <div className="col text-end">
-            <button
-            onClick={telaCadastro}
-            className="btn btn-sm mt-4 btn-cadastro"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#cadastro"
-            aria-controls="offcanvasRight"
-            >CADASTRAR</button>
-        </div>
-
         <div>
-            {produto && (
+            {props.produto && (
             <div className="offcanvas offcanvas-end" tabIndex="-1" id="cadastro" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header">
                 <h4 className="offcanvas-title mt-4" id="offcanvasRightLabel">
@@ -109,6 +96,5 @@ export default function Cadastrar() {
             </div>
             )}
         </div>
-    </>
     ); 
 }
