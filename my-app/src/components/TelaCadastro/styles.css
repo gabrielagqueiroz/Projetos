@@ -1,50 +1,12 @@
-.offcanvas-header, .offcanvas-body, .text-center, .d-flex{
-    background-color: #001f3f !important;
-}
-
-.btn-cadastrar {
-    background-color:#FF851B !important;
+.btn-cadastro {
+    margin-top: 2rem;
+    margin-right: 3rem;
+    background-color:#003872 !important;
     color: #fff !important;
 }
 
-.btn-close{
-    color: #fff !important;
-}
-
-input {
-    border-color: #FF851B !important; 
-}
-    
-h4, label {
-    color: #FF851B;
-    font-weight: 600 !important;
-}
-
-.foto{
-    width: 100px;
-    height: 100px;
-    background-color: #fff !important;
-    border: 2px solid #FF851B !important;
-    border-radius: 4px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    cursor: pointer !important;
-    transition: background .3s !important;
-    
+.btn-cadastro:hover {
+    background-color: #075baf !important;
   }
   
-  .img {
-    width: 95px;
-    height: 95px;
-    border: none !important;
-  }
 
-  .foto:hover {
-    background-color: rgb(114, 114, 114); 
-    border: 2px solid #fff !important;
-  }
-  
-  .inputFoto {
-    display: none;
-  }

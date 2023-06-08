@@ -1,18 +1,9 @@
-.btn-editar {
-    margin-right: 0.5rem;
-    background-color: #FF851B !important;
-    color: #fff !important;
-    align-items: center !important;
-}
-
-.btn-excluir {
-    margin-right: 0.5rem;
-    background-color: #003872 !important;
-    color: #fff !important;
-    align-items: center !important;
-}
-
 td {
-    text-align: center !important;
-    vertical-align: center !important ;
-}
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .img {
+    display: block;
+    margin: 0 auto;
+  }

@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import ButtonExcluir from '../ButtonExcluir';
+import TelaEditar from '../TelaEditar';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
@@ -34,11 +35,11 @@ export default function Tbody() {
                         <td>${cada.preco * cada.quantidade},00</td>
                         <td>{cada.peso * cada.quantidade}kg</td>
                         <td>
-                            <img src={cada.foto} alt="" width="70rem" />
+                          <img className="img" src={cada.foto} alt=""/>
                         </td>
                         <td>
-                            <button className="btn btn-sm mt-4 btn-editar">Editar</button>
-                           <ButtonExcluir id={cada.id} setProduto={setProduto}/>
+                          <TelaEditar/> 
+                          <ButtonExcluir id={cada.id} setProduto={setProduto}/>
                         </td>
                     </tr>
                 )

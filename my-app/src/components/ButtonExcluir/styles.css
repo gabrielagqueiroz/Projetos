@@ -1,0 +1,11 @@
+
+.btn-excluir {
+    background-color: #003872 !important;
+    color: #fff !important;
+    align-items: center !important;
+}
+
+.btn-excluir:hover {
+  background-color: #075baf !important;
+  border:#075baf !important;
+}

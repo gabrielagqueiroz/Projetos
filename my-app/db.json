@@ -15,6 +15,14 @@
       "preco": 5,
       "peso": 1,
       "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "arroz",
+      "quantidade": 10,
+      "preco": 5,
+      "peso": 1,
+      "foto": "https://www.designi.com.br/images/preview/10001834.jpg"
     }
   ]
 }

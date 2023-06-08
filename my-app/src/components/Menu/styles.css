@@ -1,29 +1,12 @@
 .btn-buscar {
-background-color: #FF851B !important;
-color: #fff !important;
-}
-
-.btn-cadastro {
-    margin-right: 6rem;
-    background-color:#003872 !important;
+    background-color: chocolate !important;
     color: #fff !important;
-}
+    }
 
-.btn-cadastrar {
-    
-    background-color:#FF851B !important;
-    color: #fff !important;
-}
+    .btn-buscar:hover {
+        background-color: #f38b2a !important;
+    }
 
-input {
-    border-color: #FF851B !important; 
-}
-
-h4, label {
-    color: #FF851B;
-    font-weight: bold;
-}
-
-.offcanvas-header, .offcanvas-body, .text-center {
-    background-color: #001f3f !important;
-}
+    input {
+        border-color: #FF851B !important; 
+    }

@@ -13,7 +13,9 @@ export default function Menu() {
         <div className="col text-start">
             <button className="btn btn-sm mt-4 btn-buscar">BUSCAR</button>
         </div>
+
         <TelaCadastro/>
+        
     </div>
     ); 
 }

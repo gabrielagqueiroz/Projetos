@@ -1,0 +1,49 @@
+.btn-cadastrar {
+    background-color:chocolate !important;
+    color: #fff !important;
+}
+
+.btn-cadastrar:hover {
+    background-color: #f38b2a !important;
+    border: #f38b2a !important;
+}
+
+input {
+    border-color: #FF851B !important; 
+}
+
+h4, label {
+    color: #FF851B;
+    font-weight: 400;
+}
+
+.offcanvas-header, .offcanvas-body, .text-center, .d-flex{
+    background-color: #001f3f !important;
+}
+
+.btn-close{
+    color: #fff !important;
+}
+
+.foto, .img{
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff !important;
+    border: 2px solid #FF851B !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    transition: background .3s !important;
+    
+  }
+
+  .foto:hover {
+    background-color: #FF851B!important; 
+    border: 2px solid #fff !important;
+  }
+  
+  .inputFoto {
+    display: none;
+  }

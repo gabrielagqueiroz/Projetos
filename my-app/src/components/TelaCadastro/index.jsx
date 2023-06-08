@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Cadastrar from '../Cadastrar';
+import ButtonCadastrar from '../ButtonCadastrar';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -18,14 +18,14 @@ export default function TelaCadastro() {
         <div className="col text-end">
             <button
             onClick={telaCadastro}
-            className="btn btn-sm mt-4 btn-cadastro"
+            className="btn btn-sm btn-cadastro"
             data-bs-toggle="offcanvas"
             data-bs-target="#cadastro"
             aria-controls="offcanvasRight"
             >CADASTRAR</button>
         </div>
 
-        <Cadastrar setProduto={setProduto} produto={produto}/>
+        <ButtonCadastrar setProduto={setProduto} produto={produto}/>
     </>
     )
 }

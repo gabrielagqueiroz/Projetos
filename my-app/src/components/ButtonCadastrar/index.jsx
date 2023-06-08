@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import './styles.css'
 
 
-export default function Cadastrar(props) {
+export default function ButtonCadastrar(props) {
     const [novoProduto, setNovoProduto] = useState({
         id: '',
         nome: '',
@@ -26,7 +27,7 @@ export default function Cadastrar(props) {
             });
             const dados = await resposta.json();
             props.setProduto([...props.produto, dados])
-            setNovoProduto({id: '', nome: '', quantidade: '', preco: '', peso:'', foto: ''});
+            setNovoProduto({id: '', nome: '', quantidade: '', preco: '', peso:'', foto:''});
         } catch (error) {
             console.log(error);
         }

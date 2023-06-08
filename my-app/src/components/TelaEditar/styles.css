@@ -1,0 +1,10 @@
+.btn-editar {
+    background-color: chocolate !important;
+    color: #fff !important;
+    align-items: center !important;
+}
+
+.btn-editar:hover {
+    background-color: #f38b2a !important;
+    border: #f38b2a !important;
+}

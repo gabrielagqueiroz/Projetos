@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles.css'
+
 export default function ButtonExcluir({id, setProduto}) {
         const excluirProduto = async () => {
             try {
@@ -18,7 +20,7 @@ export default function ButtonExcluir({id, setProduto}) {
 
     return(
         <>
-            <button onClick={excluirProduto} className="btn btn-sm mt-4 btn-excluir">Excluir</button>
+            <button onClick={excluirProduto} className="btn btn-sm btn-excluir">Excluir</button>
         </>
     )
 }
